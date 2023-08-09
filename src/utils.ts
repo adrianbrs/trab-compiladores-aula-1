@@ -1,7 +1,7 @@
 import { createReadStream, existsSync } from 'fs';
 import readline from 'readline'
 
-export const LETTER_RE = /^[\p{Letter}]$/u;
+export const LETTER_RE = /^[\p{Letter}-]$/u;
 export const NON_LETTER_RE = /[^\p{Letter}-]+/u;
 
 export async function read(filepath: string, cb: (line: string) => void | Promise<void>) {

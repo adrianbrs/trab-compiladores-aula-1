@@ -44,7 +44,7 @@ export class Trie {
         let node = this.root;
         let word = '';
         for (i = 0; i < text.length; i++) {
-            const c = text[i].toLowerCase();
+            let c = text[i].toLowerCase();
             if (!node.has(c)) {
                 if (node === this.root) {
                     continue;
@@ -52,6 +52,12 @@ export class Trie {
                 if (isLetter(c)) {
                     word = '';
                     node = this.root;
+
+                    // Consume the rest of the (possible) word
+                    do {
+                        i++;
+                        c = text[i].toLowerCase();
+                    } while (isLetter(c) && i < text.length);
                     continue;
                 }
                 break;
