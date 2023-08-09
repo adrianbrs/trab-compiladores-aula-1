@@ -1,7 +1,9 @@
 # Atividade Compiladores - Aula 1 - UPF
+
 ## Adrian Cerbaro - 178304
 
 ### Descrição
+
 Desenvolver um programa para ler um arquivo texto, procurar e listar as palavras contidas em um dicionário de palavras.
 
 - Você deve criar um dicionário com 20 palavras da língua portuguesa.
@@ -12,17 +14,21 @@ Desenvolver um programa para ler um arquivo texto, procurar e listar as palavras
 
 ### Execução do programa
 
-1. Instalação do NodeJS (acima da versão 13)
+1. Instalação do NodeJS (14+)
 2. Instalação de dependências:
+
 ```bash
 npm install
 ```
+
 3. Execução
+
 ```bash
 npm start
 ```
 
 ### Opções
+
 ```bash
 Usage: npm start -- [options] [filename]
 
@@ -35,7 +41,9 @@ Options:
 ```
 
 ### Exemplos
+
 #### Comando padrão
+
 ```bash
 > npm start
 > tsx src/index.ts
@@ -65,7 +73,9 @@ tempo de execução: 458.176ms
 ```
 
 #### Contar todas as palavras de um texto
+
 _É só utilizar o mesmo arquivo como input e dicionário_
+
 ```bash
 npm start -- test/input.txt -d test/input.txt
 > tsx src/index.ts test/input.txt -d test/input.txt
