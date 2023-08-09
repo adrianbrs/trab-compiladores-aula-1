@@ -1,0 +1,25 @@
+{
+  "name": "compiler-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "Adrian Cerbaro <adriancerbaro@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "rimraf": "^5.0.1",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
